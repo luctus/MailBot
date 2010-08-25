@@ -1,7 +1,7 @@
 all:
   server: devel
-  url: 'http://mailbot.devel.fen.uchile.cl'
+  url: 'http://www.yourdomain.com'
   smtp:
-    host: 'mass.fen.uchile.cl'
+    host: smtp.yourdomain.com
     port: 25
   
