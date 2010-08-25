@@ -24,9 +24,9 @@ all:
     class:        sfPropelDatabase
     param:
       classname:  PropelPDO
-      dsn:        mysql:dbname=mailbot2;host=localhost
+      dsn:        mysql:dbname=mailbot;host=localhost
       username:   usrmailbot
-      password:   EcmvRRjqLXZCsYhJ
+      password:   yourpass
       encoding:   latin1
       persistent: true
       pooling:    true
