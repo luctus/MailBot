@@ -1,0 +1,78 @@
+propel:
+  mb_mail:
+    id: ~
+    username: { type: varchar(255) }
+    body_html: { type: longvarchar }
+    body_text: { type: longvarchar }
+    created_at: ~
+    subject: { type: varchar(255) }
+    strfrom: { type: varchar(255) }
+    reply_to: { type: varchar(255) }
+    notify_to: { type: varchar(255), default: NULL }
+    platform: { type: varchar(50) }
+    public_path: { type: varchar(255) }
+    batch_size: { type: tinyint, default: 10 }
+    state: { type: varchar(50) }
+    error: { type: varchar(255) }
+    token: { type: varchar(255) }
+    
+
+  mb_mailto:
+    id: ~
+    mail_id: { type: integer, foreignTable: mb_mail, foreignReference: id, onDelete: cascade }
+    mailto: { type: varchar(255) }
+    state: { type: varchar(50) }
+    created_at: ~
+    sent_at: { type: timestamp }
+    tries: { type: tinyint }
+    error: { type: longvarchar }
+    
+  mb_mail_attachment:
+    id: ~
+    mail_id: { type: integer, foreignTable: mb_mail, foreignReference: id, onDelete: cascade }
+    url: { type: varchar(255) }
+    type: { type: varchar(255) }
+
+  log_mail:
+    id: { type: integer, primaryKey: true }
+    username: { type: varchar(255) }
+    body_html: { type: longvarchar }
+    body_text: { type: longvarchar }
+    created_at: ~
+    subject: { type: varchar(255) }
+    strfrom: { type: varchar(255) }
+    reply_to: { type: varchar(255) }
+    notify_to: { type: varchar(255), default: NULL }
+    platform: { type: varchar(50) }
+    public_path: { type: varchar(255) }
+    batch_size: { type: tinyint, default: 10 }
+    state: { type: varchar(50) }
+    error: { type: varchar(255) }
+    token: { type: varchar(255) }
+
+  log_mailto:
+    id: { type: integer, primaryKey: true }
+    mail_id: { type: integer, foreignTable: log_mail, foreignReference: id, onDelete: cascade }
+    mailto: { type: varchar(255) }
+    state: { type: varchar(50) }
+    created_at: ~
+    sent_at: { type: timestamp }
+    tries: { type: tinyint }
+    error: { type: longvarchar }
+
+  log_mail_attachment:
+    id: { type: integer, primaryKey: true }
+    mail_id: { type: integer, foreignTable: log_mail, foreignReference: id, onDelete: cascade }
+    url: { type: varchar(255) }
+    type: { type: varchar(255) }
+
+  cuenta:
+    id: ~
+    username: { type:varchar(100), required:true}
+    credential: { type: varchar(255), required:true}
+
+  log:
+    id: ~
+    cuenta_id: { type: integer, foreignTable: cuenta, foreignReference: id, onDelete: cascade }
+    what: { type:longvarchar }
+    created_at: ~

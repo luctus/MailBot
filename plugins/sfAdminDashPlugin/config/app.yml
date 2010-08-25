@@ -1,0 +1,23 @@
+all:
+  sf_admin_dash:
+    web_dir:                      /sfAdminDashPlugin
+    image_dir:                    /sfAdminDashPlugin/images/icons/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    logout:                       true
+    site:                         MailBot Portal
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    login_route:                  @sf_guard_signin
+    logout_route:                 @sf_guard_signout
+
+    items:
+      Current Mails:
+        url: mb_mail
+      Current Recipients:
+        url: mb_mailto
+      Past Mails:
+        url: log_mail
+      Past Recipients:
+        url: log_mailto   
+      

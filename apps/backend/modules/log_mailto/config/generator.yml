@@ -1,0 +1,30 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           LogMailto
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              LogMailto
+    plural:                LogMailtos
+    route_prefix:          log_mailto
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: "Recipients list"
+        display: [id, mail_id, mailto, state, error, sent_at]
+        object_actions: []
+        actions:
+          export:
+            label: "Download as xls"
+          back:
+            label: "Back to Past mails"
+      filter:
+        display: [mail_id, mailto, state, sent_at]
+      form:    ~
+      edit:    ~
+      new:     ~

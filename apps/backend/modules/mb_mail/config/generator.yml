@@ -1,0 +1,37 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           MbMail
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              MbMail
+    plural:                MbMails
+    route_prefix:          mb_mail
+    with_propel_route:     1
+    actions_base_class:    sfActions
+    css:              	   nothing
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: "Today's Mails"
+        display: [id, platform, subject, progress, nb_errors, batch_size, state, error, created_at]
+        sort: [created_at, desc]
+#        object_actions:
+#          resume: ~
+#          stop: ~
+#          fast: ~
+#          slow: ~
+#          recipients: ~
+        batch_actions:
+          stop: ~
+          resume: ~
+          fast: ~
+          slow: ~
+      filter:
+        display: [subject, platform, state, strfrom, created_at]
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,3 @@
+<td colspan="9">
+  <?php echo __('%%id%% - %%platform%% - %%subject%% - %%progress%% - %%nb_errors%% - %%batch_size%% - %%state%% - %%error%% - %%created_at%%', array('%%id%%' => link_to($MbMail->getId(), 'mb_mail_edit', $MbMail), '%%platform%%' => $MbMail->getPlatform(), '%%subject%%' => $MbMail->getSubject(), '%%progress%%' => $MbMail->getProgress(), '%%nb_errors%%' => $MbMail->getNbErrors(), '%%batch_size%%' => $MbMail->getBatchSize(), '%%state%%' => $MbMail->getState(), '%%error%%' => $MbMail->getError(), '%%created_at%%' => false !== strtotime($MbMail->getCreatedAt()) ? format_date($MbMail->getCreatedAt(), "f") : '&nbsp;'), 'messages') ?>
+</td>

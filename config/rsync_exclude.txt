@@ -1,0 +1,17 @@
+# Project files
+/cache/*
+/log/*
+#/web/*_dev.php
+/web/uploads/*
+app.yml
+databases.yml
+backup/*
+# SCM files
+.arch-params
+.bzr
+_darcs
+.git
+.hg
+.monotone
+.svn
+CVS

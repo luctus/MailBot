@@ -1,0 +1,3 @@
+<td colspan="9">
+  <?php echo __('%%id%% - %%platform%% - %%subject%% - %%progress%% - %%nb_errors%% - %%batch_size%% - %%state%% - %%error%% - %%created_at%%', array('%%id%%' => link_to($LogMail->getId(), 'log_mail_edit', $LogMail), '%%platform%%' => $LogMail->getPlatform(), '%%subject%%' => $LogMail->getSubject(), '%%progress%%' => $LogMail->getProgress(), '%%nb_errors%%' => $LogMail->getNbErrors(), '%%batch_size%%' => $LogMail->getBatchSize(), '%%state%%' => $LogMail->getState(), '%%error%%' => $LogMail->getError(), '%%created_at%%' => false !== strtotime($LogMail->getCreatedAt()) ? format_date($LogMail->getCreatedAt(), "f") : '&nbsp;'), 'messages') ?>
+</td>

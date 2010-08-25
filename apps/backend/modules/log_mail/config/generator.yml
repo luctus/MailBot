@@ -1,0 +1,25 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           LogMail
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              LogMail
+    plural:                LogMails
+    route_prefix:          log_mail
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: "Past Mails"
+        display: [id, platform, subject, progress, nb_errors, batch_size, state, error, created_at]
+        batch_actions: []
+      filter:
+        display: [subject, platform, state, strfrom, created_at]
+      form:    ~
+      edit:    ~
+      new:     ~

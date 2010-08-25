@@ -1,0 +1,567 @@
+Aug 04 22:27:03 symfony [info] {sfPatternRouting} Match route "mb_mailto" (/mb_mailto.:sf_format) for /mb_mailto with parameters array (  'module' => 'mb_mailto',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:27:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:27:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:27:03 symfony [info] {mb_mailtoActions} Call "mb_mailtoActions->executeIndex()"
+Aug 04 22:27:03 symfony [err] {PropelException} Unable to open PDO connection [wrapped: SQLSTATE[28000] [1045] Access denied for user 'mtoro'@'localhost' (using password: YES)]
+Aug 04 22:27:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 04 22:27:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:27:03 symfony [info] {sfWebDebugLogger} Configuration 167.73 ms (11)
+Aug 04 22:27:03 symfony [info] {sfWebDebugLogger} Factories 121.24 ms (1)
+Aug 04 22:27:03 symfony [info] {sfWebDebugLogger} Action "mb_mailto/index" 71.29 ms (1)
+Aug 04 22:34:57 symfony [info] {sfPatternRouting} Match route "mb_mailto" (/mb_mailto.:sf_format) for /mb_mailto with parameters array (  'module' => 'mb_mailto',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:34:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:34:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:34:57 symfony [info] {mb_mailtoActions} Call "mb_mailtoActions->executeIndex()"
+Aug 04 22:34:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   10.3 MB | mempeak:   10.3 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:34:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   10.3 MB | mempeak:   10.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mailto`
+Aug 04 22:34:57 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/indexSuccess.php"
+Aug 04 22:34:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   10.8 MB | mempeak:   10.8 MB | memdelta:      0.0 B | SELECT mb_mailto.ID, mb_mailto.MAIL_ID, mb_mailto.MAILTO, mb_mailto.STATE, mb_mailto.CREATED_AT, mb_mailto.SENT_AT, mb_mailto.TRIES, mb_mailto.ERROR FROM `mb_mailto` LIMIT 20
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_assets.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_flashes.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_list_header.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_filters.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_filters_field.php"
+Aug 04 22:34:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   12.3 MB | mempeak:   12.3 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_filters_field.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_filters_field.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_filters_field.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_list.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_list_batch_actions.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mailto/templates/_list_actions.php"
+Aug 04 22:34:57 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mailto/templates/_list_footer.php"
+Aug 04 22:34:57 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:34:57 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:34:57 symfony [info] {main} Get slot "title"
+Aug 04 22:34:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:34:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Configuration 295.56 ms (11)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Factories 138.72 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Action "mb_mailto/index" 17.30 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mailto/index" 55.31 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_assets" 0.39 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_flashes" 0.37 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_list_header" 0.33 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_filters" 21.20 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_filters_field" 16.51 ms (4)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_list" 0.55 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_list_batch_actions" 0.71 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_list_actions" 2.11 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebDebugLogger} Partial "mb_mailto/_list_footer" 0.95 ms (1)
+Aug 04 22:34:57 symfony [info] {sfWebResponse} Send content (68446 o)
+Aug 04 22:35:06 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:35:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:35:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:35:06 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:35:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:35:06 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:35:06' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:35:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   10.3 MB | mempeak:   10.3 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:35:06 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:35:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   10.8 MB | mempeak:   10.8 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:35:06 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:35:06 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:35:06 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:35:06 symfony [info] {main} Get slot "title"
+Aug 04 22:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Configuration 84.23 ms (12)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Factories 39.09 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 22.97 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 32.28 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.35 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.36 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.33 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.61 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.32 ms (5)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.51 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.72 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.45 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.34 ms (1)
+Aug 04 22:35:06 symfony [info] {sfWebResponse} Send content (74339 o)
+Aug 04 22:36:24 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:36:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:36:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:36:24 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:36:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:36:24 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:36:24' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:36:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:36:24 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:36:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:36:24 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:36:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:36:25 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:36:25 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:36:25 symfony [info] {main} Get slot "title"
+Aug 04 22:36:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:36:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Configuration 263.05 ms (11)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Factories 119.45 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 27.25 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 32.74 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.36 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.37 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.33 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.61 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.35 ms (5)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.55 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.70 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.47 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.37 ms (1)
+Aug 04 22:36:25 symfony [info] {sfWebResponse} Send content (74222 o)
+Aug 04 22:37:31 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:37:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:37:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:37:31 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:37:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:37:31 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:37:31' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:37:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:37:31 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:37:31 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:37:31 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:37:31 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:37:31 symfony [info] {main} Get slot "title"
+Aug 04 22:37:31 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:37:31 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:37:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:37:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Configuration 14.38 ms (13)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Factories 39.23 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 67.62 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 71.99 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.61 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.65 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.72 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 23.82 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 16.49 ms (5)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.91 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 1.20 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.76 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 2.25 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.23 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.97 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.61 ms (1)
+Aug 04 22:37:31 symfony [info] {sfWebResponse} Send content (77551 o)
+Aug 04 22:37:38 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:37:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:37:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:37:38 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:37:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:37:38 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:37:38' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:37:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:37:38 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:37:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:37:38 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:37:38 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:37:38 symfony [info] {main} Get slot "title"
+Aug 04 22:37:38 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:37:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:37:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:37:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Configuration 291.81 ms (12)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Factories 141.18 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 27.17 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 36.27 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.38 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.38 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.33 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.65 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.33 ms (5)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.53 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.70 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.45 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.39 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.14 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.57 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.35 ms (1)
+Aug 04 22:37:38 symfony [info] {sfWebResponse} Send content (77550 o)
+Aug 04 22:38:38 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:38:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:38:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:38:38 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:38:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:38:38 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:38:38' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:38:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:38:38 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:38:38 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:38:38 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:38 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:38 symfony [info] {main} Get slot "title"
+Aug 04 22:38:38 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:38:38 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:38:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:38:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Configuration 2.27 ms (12)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Factories 39.58 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 67.32 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 56.48 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.57 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.61 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.52 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 23.44 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 16.34 ms (5)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.85 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 1.13 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.72 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 2.18 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.21 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.89 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.57 ms (1)
+Aug 04 22:38:38 symfony [info] {sfWebResponse} Send content (77550 o)
+Aug 04 22:38:43 symfony [info] {sfPatternRouting} Match route "mb_mail_new" (/mb_mail/new.:sf_format) for /mb_mail/new with parameters array (  'module' => 'mb_mail',  'action' => 'new',  'sf_format' => 'html',)
+Aug 04 22:38:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:38:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:38:44 symfony [info] {mb_mailActions} Call "mb_mailActions->executeNew()"
+Aug 04 22:38:44 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/newSuccess.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_header.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_fieldset.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_field.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_actions.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_form_footer.php"
+Aug 04 22:38:44 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:44 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:44 symfony [info] {main} Get slot "title"
+Aug 04 22:38:44 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:38:44 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:38:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:38:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Configuration 2.29 ms (12)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Factories 122.60 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Action "mb_mail/new" 116.80 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/new" 69.91 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.56 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.40 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form_header" 0.36 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form" 38.33 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form_fieldset" 34.11 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form_field" 28.05 ms (14)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form_actions" 0.95 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_form_footer" 0.39 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.16 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.58 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.36 ms (1)
+Aug 04 22:38:44 symfony [info] {sfWebResponse} Send content (145469 o)
+Aug 04 22:38:48 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:38:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:38:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:38:48 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:38:48 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:38:48 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:38:48' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:38:48 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.5 MB | mempeak:    8.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:38:48 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:38:48 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.0 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:38:48 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:48 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:38:48 symfony [info] {main} Get slot "title"
+Aug 04 22:38:48 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:38:48 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:38:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:38:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (12)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Factories 29.99 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 37.44 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 31.82 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.34 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.36 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.31 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.31 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.23 ms (5)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.52 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.68 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.44 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.32 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.13 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.52 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.34 ms (1)
+Aug 04 22:38:48 symfony [info] {sfWebResponse} Send content (77598 o)
+Aug 04 22:39:25 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:39:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:39:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:39:25 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:39:25 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:39:25 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:39:25' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:39:25 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:39:25 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:39:25 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:39:25 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:39:25 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:39:25 symfony [info] {main} Get slot "title"
+Aug 04 22:39:25 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:39:25 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:39:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:39:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Configuration 253.37 ms (12)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Factories 110.78 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 26.82 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 36.20 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.36 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.55 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.33 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.60 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.40 ms (5)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.52 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.68 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.44 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.35 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.14 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.57 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.36 ms (1)
+Aug 04 22:39:25 symfony [info] {sfWebResponse} Send content (77537 o)
+Aug 04 22:46:19 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 22:46:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 22:46:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 22:46:19 symfony [info] {mb_mailActions} Call "mb_mailActions->executeIndex()"
+Aug 04 22:46:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 22:46:19 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    9.8 MB | mempeak:    9.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM (SELECT DISTINCT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail`, `mb_mailto` WHERE mb_mailto.CREATED_AT>'2010-08-04 19:46:19' AND mb_mailto.STATE IS NULL  AND mb_mail.STATE IS NULL  AND mb_mail.ID=mb_mailto.MAIL_ID) propelmatch4cnt
+Aug 04 22:46:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.0 MB | mempeak:   11.0 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `mb_mail`
+Aug 04 22:46:19 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/indexSuccess.php"
+Aug 04 22:46:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:   11.5 MB | mempeak:   11.5 MB | memdelta:      0.0 B | SELECT mb_mail.ID, mb_mail.USERNAME, mb_mail.BODY_HTML, mb_mail.BODY_TEXT, mb_mail.CREATED_AT, mb_mail.SUBJECT, mb_mail.STRFROM, mb_mail.REPLY_TO, mb_mail.NOTIFY_TO, mb_mail.PLATFORM, mb_mail.PUBLIC_PATH, mb_mail.BATCH_SIZE, mb_mail.STATE, mb_mail.ERROR, mb_mail.TOKEN FROM `mb_mail` ORDER BY mb_mail.CREATED_AT DESC LIMIT 20
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_assets.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_flashes.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_header.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_filters_field.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_batch_actions.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/cache/backend/dev/modules/autoMb_mail/templates/_list_actions.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/modules/mb_mail/templates/_list_footer.php"
+Aug 04 22:46:19 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:46:19 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 22:46:19 symfony [info] {main} Get slot "title"
+Aug 04 22:46:19 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 22:46:19 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 22:46:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 22:46:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Configuration 280.90 ms (12)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Factories 136.97 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Action "mb_mail/index" 24.37 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} View "Success" for "mb_mail/index" 36.15 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_assets" 0.36 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_flashes" 0.37 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_header" 0.33 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters" 13.74 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_filters_field" 9.45 ms (5)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list" 0.54 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_batch_actions" 0.69 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_actions" 0.45 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "mb_mail/_list_footer" 1.37 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 0.15 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.57 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.35 ms (1)
+Aug 04 22:46:19 symfony [info] {sfWebResponse} Send content (77632 o)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group" (/sf_guard_group.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_new" (/sf_guard_group/new.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_create" (/sf_guard_group.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_edit" (/sf_guard_group/:id/edit.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_update" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_delete" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_show" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_object" (/sf_guard_group/:id/:action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_collection" (/sf_guard_group/:action/action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission" (/sf_guard_permission.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_new" (/sf_guard_permission/new.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_create" (/sf_guard_permission.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_edit" (/sf_guard_permission/:id/edit.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_update" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_delete" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_show" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_object" (/sf_guard_permission/:id/:action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_collection" (/sf_guard_permission/:action/action.:sf_format)
+Aug 04 23:15:12 symfony [info] {sfPatternRouting} Match route "mb_mail" (/mb_mail.:sf_format) for /mb_mail with parameters array (  'module' => 'mb_mail',  'action' => 'index',  'sf_format' => 'html',)
+Aug 04 23:15:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 23:15:12 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Aug 04 23:15:12 symfony [info] {sfBasicSecurityFilter} Action "mb_mail/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Aug 04 23:15:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 23:15:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 23:15:12 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Aug 04 23:15:12 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Aug 04 23:15:12 symfony [info] {sfPHPView} Decorate content with "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 23:15:12 symfony [info] {sfPHPView} Render "/home/devel/datos/gothink.cl/mailbot2/apps/backend/templates/layout.php"
+Aug 04 23:15:12 symfony [info] {main} Get slot "title"
+Aug 04 23:15:12 symfony [info] {main} Call "sfAdminDash->executeHeader()"
+Aug 04 23:15:12 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_header.php"
+Aug 04 23:15:12 symfony [info] {sfPartialView} Render "/home/devel/datos/gothink.cl/mailbot2/plugins/sfAdminDashPlugin/modules/sfAdminDash/templates/_footer.php"
+Aug 04 23:15:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 04 23:15:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Configuration 318.09 ms (15)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Factories 131.82 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 1.82 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 17.43 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Component "sfAdminDash/header" 1.29 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_header" 0.89 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebDebugLogger} Partial "sfAdminDash/_footer" 0.36 ms (1)
+Aug 04 23:15:12 symfony [info] {sfWebResponse} Send content (49686 o)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group" (/sf_guard_group.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_new" (/sf_guard_group/new.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_create" (/sf_guard_group.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_edit" (/sf_guard_group/:id/edit.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_update" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_delete" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_show" (/sf_guard_group/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_object" (/sf_guard_group/:id/:action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_group_collection" (/sf_guard_group/:action/action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission" (/sf_guard_permission.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_new" (/sf_guard_permission/new.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_create" (/sf_guard_permission.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_edit" (/sf_guard_permission/:id/edit.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_update" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_delete" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_show" (/sf_guard_permission/:id.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_object" (/sf_guard_permission/:id/:action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_permission_collection" (/sf_guard_permission/:action/action.:sf_format)
+Aug 04 23:15:19 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Aug 04 23:15:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 23:15:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 23:15:19 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Aug 04 23:15:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SET NAMES 'latin1'
+Aug 04 23:15:19 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.3 MB | memdelta:      0.0 B | SELECT sf_guard_user.ID, sf_guard_user.USERNAME, sf_guard_user.ALGORITHM, sf_guard_user.SALT, sf_guard_user.PASSWORD, sf_guard_user.CREATED_AT, sf_guard_user.LAST_LOGIN, sf_guard_user.IS_ACTIVE, sf_guard_user.IS_SUPER_ADMIN FROM `sf_guard_user` WHERE sf_guard_user.USERNAME='luctus' AND sf_guard_user.IS_ACTIVE=1 LIMIT 1
+Aug 04 23:15:19 symfony [info] {myUser} User is authenticated
+Aug 04 23:15:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    8.8 MB | mempeak:    9.0 MB | memdelta:      0.0 B | SELECT sf_guard_user_permission.USER_ID, sf_guard_user_permission.PERMISSION_ID, sf_guard_permission.ID, sf_guard_permission.NAME, sf_guard_permission.DESCRIPTION FROM `sf_guard_user_permission` LEFT JOIN sf_guard_permission ON (sf_guard_user_permission.PERMISSION_ID=sf_guard_permission.ID) WHERE sf_guard_user_permission.USER_ID=1
+Aug 04 23:15:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.5 MB | memdelta:      0.0 B | SELECT sf_guard_user_group.USER_ID, sf_guard_user_group.GROUP_ID, sf_guard_group.ID, sf_guard_group.NAME, sf_guard_group.DESCRIPTION FROM `sf_guard_user_group` LEFT JOIN sf_guard_group ON (sf_guard_user_group.GROUP_ID=sf_guard_group.ID) WHERE sf_guard_user_group.USER_ID=1
+Aug 04 23:15:19 symfony [info] {myUser} Add credential(s) ""
+Aug 04 23:15:19 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    9.3 MB | mempeak:    9.5 MB | memdelta:      0.0 B | UPDATE `sf_guard_user` SET `LAST_LOGIN`='2010-08-04 23:15:19' WHERE sf_guard_user.ID=1
+Aug 04 23:15:19 symfony [info] {sfFrontWebController} Redirect to "http://mailbot.gothink.cl/favicon.ico"
+Aug 04 23:15:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 04 23:15:19 symfony [info] {sfWebResponse} Send header "Location: http://mailbot.gothink.cl/favicon.ico"
+Aug 04 23:15:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 23:15:19 symfony [info] {sfWebDebugLogger} Configuration 146.39 ms (10)
+Aug 04 23:15:19 symfony [info] {sfWebDebugLogger} Factories 60.55 ms (1)
+Aug 04 23:15:19 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 217.94 ms (1)
+Aug 04 23:15:19 symfony [info] {sfWebResponse} Send content (108 o)
